@@ -1,25 +1,35 @@
 nav{
-    background-color: #0e0e0e;
+    background-color: #000;
     display: flex;
     position: fixed;
     width: 100%;
     height: 80px;
     z-index: 3;
-    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
     .div1{
         flex-basis: 50%;
         color: #fff;
-        padding-left: 50px;
+        padding-left: 150px;
+        font-size: 30px;
+        font-weight: 700;
+        padding-top: 10px;
+       
+       
+        
     }
     .div2{
         flex-basis: 50%;
         justify-content: space-around;
         justify-items: flex-end;
-        
+       
 
         a{
             color: #fff;
            padding-right: 30px;
+           text-transform: uppercase;
+           font-weight: 500;
+           text-decoration: none;
         }
     }
 }
@@ -61,6 +71,7 @@ header{
             font-family: 'Inter';
             font-weight: 200;
            
+           
                 animation-duration: 3s;
                 animation-name: slidein;
               
@@ -83,7 +94,7 @@ header{
             font-weight: 300;
             animation-duration: 3s;
             animation-name: slidein;
-          
+           
           
           @keyframes slidein {
             from {
@@ -157,7 +168,8 @@ header{
     h4{
         color: #fff;
         padding-top: 15px;
-        font-weight: 300;
+        font-weight: 500;
+        
     }
     
     
@@ -199,7 +211,7 @@ header{
     h4{
         color: #0e0e0e;
         padding-top: 15px;
-        font-weight: 300;
+        font-weight: 500;
        
     }
     

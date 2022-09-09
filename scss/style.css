@@ -1,5 +1,5 @@
 nav {
-  background-color: #0e0e0e;
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,14 +7,22 @@ nav {
   width: 100%;
   height: 80px;
   z-index: 3;
-  padding-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav .div1 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   color: #fff;
-  padding-left: 50px;
+  padding-left: 150px;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 10px;
 }
 
 nav .div2 {
@@ -28,6 +36,9 @@ nav .div2 {
 nav .div2 a {
   color: #fff;
   padding-right: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 header {
@@ -193,7 +204,7 @@ header .socials a svg:hover {
 .cards .card h4 {
   color: #fff;
   padding-top: 15px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .cards2 {
@@ -239,7 +250,7 @@ header .socials a svg:hover {
 .cards2 .card h4 {
   color: #0e0e0e;
   padding-top: 15px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .info {
