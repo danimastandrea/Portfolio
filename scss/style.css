@@ -51,7 +51,7 @@ header {
   background-position-x: right !important;
   background-repeat: no-repeat;
   background-size: contain !important;
-  background-image: url(/assets/slash.png);
+  background-image: url(../assets/slash.png);
   background-position-y: bottom !important;
   background-attachment: fixed;
 }
@@ -171,7 +171,7 @@ header .socials a svg:hover {
   background-position-x: right !important;
   background-repeat: no-repeat;
   background-size: contain !important;
-  background-image: url(/assets/slash.png);
+  background-image: url(../assets/slash.png);
   background-position-y: bottom !important;
   background-attachment: fixed;
 }
@@ -306,4 +306,7 @@ header .socials a svg:hover {
     
     
 }*/
+footer {
+  background-color: #0e0e0e;
+}
 /*# sourceMappingURL=style.css.map */
