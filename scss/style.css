@@ -45,6 +45,7 @@ header {
   background-color: #0e0e0e;
   color: #fff;
   height: 450px;
+  width: 100%;
 }
 
 header {
@@ -201,6 +202,10 @@ header .socials a svg:hover {
   height: 10rem;
 }
 
+.cards .card p {
+  color: #fff;
+}
+
 .cards .card h4 {
   color: #fff;
   padding-top: 15px;
@@ -220,6 +225,7 @@ header .socials a svg:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 96px;
 }
 
 .cards2 {
@@ -259,19 +265,28 @@ header .socials a svg:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.info .img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 96px;
+}
+
+.info .img img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.info .content__info {
+  max-width: 500px;
 }
 
 .info .content__info .title__info {
@@ -296,6 +311,59 @@ header .socials a svg:hover {
 
 .info .content__info .subtitle__info {
   font-family: 'Inter';
+  font-size: 16px;
+}
+
+.line {
+  border-top: 1px solid #0e0e0e;
+  max-width: 900px;
+  margin: auto;
+}
+
+.info2 {
+  background-color: #fff;
+  padding-top: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.info2 .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info2 .content__info .title__info {
+  margin-top: 100px;
+  font-family: 'Inter';
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.info2 .content__info .subtitle__info {
+  font-family: 'Inter';
 }
 
 /*
@@ -308,5 +376,43 @@ header .socials a svg:hover {
 }*/
 footer {
   background-color: #0e0e0e;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    max-width: 768px;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 700px;
+  }
+  .info2 .img {
+    width: 150px;
+  }
+  .info2 .content__info {
+    width: 150px;
+  }
+  .info {
+    max-width: 700px;
+  }
+  .info img {
+    width: 150px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
