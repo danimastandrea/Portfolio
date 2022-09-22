@@ -1,51 +1,15 @@
-nav {
+.navbar {
   background-color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 80px;
   position: fixed;
   width: 100%;
-  height: 80px;
   z-index: 3;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-nav .div1 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  color: #fff;
-  padding-left: 150px;
-  font-size: 30px;
-  font-weight: 700;
-  padding-top: 10px;
-}
-
-nav .div2 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  justify-items: flex-end;
-}
-
-nav .div2 a {
-  color: #fff;
-  padding-right: 30px;
-  text-transform: uppercase;
-  font-weight: 500;
-  text-decoration: none;
 }
 
 header {
   background-color: #0e0e0e;
   color: #fff;
   height: 450px;
-  width: 100%;
 }
 
 header {
@@ -63,7 +27,13 @@ header {
   }
 }
 
-header .header__info {
+header .container {
+  max-width: 1800px;
+  height: 450px;
+  width: 100%;
+}
+
+header .container .header__info {
   max-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,9 +49,8 @@ header .header__info {
   margin-right: auto;
 }
 
-header .header__info h1 {
-  max-width: 900px;
-  font-size: 70px;
+header .container .header__info h1 {
+  font-size: 4.375rem;
   text-shadow: #fff;
   font-family: 'Inter';
   font-weight: 200;
@@ -113,7 +82,25 @@ header .header__info h1 {
   }
 }
 
-header .header__info h3 {
+header .container .header__info h1::before {
+  content: '<h1> ';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #f1f1f1;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+header .container .header__info h1::after {
+  content: ' </h1>';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #f1f1f1;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+header .container .header__info h3 {
   font-size: 20px;
   font-weight: 300;
   -webkit-animation-duration: 3s;
@@ -133,7 +120,25 @@ header .header__info h3 {
   }
 }
 
-header .socials {
+header .container .header__info h3::before {
+  content: '<h3> ';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #f1f1f1;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+header .container .header__info h3::after {
+  content: ' </h3>';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #f1f1f1;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+header .container .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,11 +148,11 @@ header .socials {
   padding-top: 20px;
 }
 
-header .socials a svg {
+header .container .socials a svg {
   padding-left: 15px;
 }
 
-header .socials a svg:hover {
+header .container .socials a svg:hover {
   fill: #fff;
 }
 
@@ -166,6 +171,9 @@ header .socials a svg:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 96px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .cards {
@@ -193,13 +201,13 @@ header .socials a svg:hover {
 }
 
 .cards .card img {
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .cards .card img:hover {
-  width: 20rem;
-  height: 10rem;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .cards .card p {
@@ -210,6 +218,8 @@ header .socials a svg:hover {
   color: #fff;
   padding-top: 15px;
   font-weight: 500;
+  font-family: 'Inter';
+  text-transform: uppercase;
 }
 
 .cards2 {
@@ -226,6 +236,8 @@ header .socials a svg:hover {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 96px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .cards2 {
@@ -244,19 +256,21 @@ header .socials a svg:hover {
 }
 
 .cards2 .card img {
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .cards2 .card img:hover {
-  width: 20rem;
-  height: 10rem;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .cards2 .card h4 {
   color: #0e0e0e;
   padding-top: 15px;
   font-weight: 500;
+  font-family: 'Inter';
+  text-transform: uppercase;
 }
 
 .info {
@@ -277,6 +291,8 @@ header .socials a svg:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-bottom: 96px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .info .img img {
@@ -292,26 +308,48 @@ header .socials a svg:hover {
 .info .content__info .title__info {
   margin-top: 100px;
   font-family: 'Inter';
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+.info .content__info .title__info::before {
+  content: '<h3> ';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #000;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+.info .content__info .title__info::after {
+  content: ' </h3>';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #000;
+  margin-bottom: 50px;
+  opacity: 0.5;
 }
 
 .info .content__info .subtitle__info {
   font-family: 'Inter';
   font-size: 16px;
+  padding-right: 10px;
+}
+
+.info .content__info .subtitle__info::before {
+  content: '<p> ';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #000;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+.info .content__info .subtitle__info::after {
+  content: ' </p>';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #000;
+  margin-bottom: 50px;
+  opacity: 0.5;
 }
 
 .line {
@@ -327,12 +365,79 @@ header .socials a svg:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding-bottom: 96px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.info2 .img {
+.info2 .img img {
+  width: 400px;
+  height: 250px;
+}
+
+.info2 .content__info {
+  max-width: 500px;
+}
+
+.info2 .content__info .title__info {
+  margin-top: 70px;
+  font-family: 'Inter';
+}
+
+.info2 .content__info .title__info::before {
+  content: '<h3> ';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #000;
+  opacity: 0.5;
+}
+
+.info2 .content__info .title__info::after {
+  content: ' </h3>';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #000;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+.info2 .content__info .subtitle__info {
+  font-family: 'Inter';
+  font-size: 16px;
+}
+
+.info2 .content__info .subtitle__info::before {
+  content: '<p> ';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #000;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+.info2 .content__info .subtitle__info::after {
+  content: ' </p>';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #000;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+footer {
+  height: 200px;
+  background-color: #0e0e0e;
+  margin-top: 96px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -340,79 +445,90 @@ header .socials a svg:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.info2 .content__info .title__info {
-  margin-top: 100px;
+footer h6 {
+  color: #fff;
   font-family: 'Inter';
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
+  font-weight: 500;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
 }
 
-.info2 .content__info .subtitle__info {
-  font-family: 'Inter';
+footer .socials a svg {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-left: 35px;
 }
 
-/*
-  
-&{
-    background-image: linear-gradient(to top,rgba(255,255,255,1)50%,rgba(14,14,14,1)50%)!important;
-    margin-top:-3px;
-    
-    
-}*/
-footer {
-  background-color: #0e0e0e;
+footer .socials a svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
-  header {
-    width: 100%;
-    max-width: 768px;
+@media (max-width: 950px) {
+  .navbar {
+    position: absolute;
   }
   .cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 25px;
+  }
+  .cards .card {
+    padding-bottom: 25px;
   }
   .cards2 {
+    padding-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-image: none;
+  }
+  .cards2 {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(85%, white), color-stop(15%, #0e0e0e)) !important;
+    background-image: linear-gradient(to top, white 85%, #0e0e0e 15%) !important;
+    margin-top: -3px;
+  }
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 20px;
   }
   .info2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 700px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 20px;
   }
   .info2 .img {
-    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .info2 .content__info {
-    width: 150px;
-  }
-  .info {
-    max-width: 700px;
-  }
-  .info img {
-    width: 150px;
+  .info2 .img img {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
