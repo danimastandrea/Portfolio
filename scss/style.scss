@@ -15,9 +15,10 @@
 }
 
 header{
-  background-color: #0e0e0e;
+    
     color: #fff;
     height:450px;
+   background-color: #0e0e0e;
     &{
       background-position-x: right!important;
       background-repeat: no-repeat;
@@ -270,14 +271,27 @@ header{
   padding-bottom: 96px;
   padding-left: 50px;
   padding-right: 50px;
+  &{
+    background-position-x: right!important;
+    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-image:url(../assets/slash3.png);
+    background-position-y: bottom!important;
+   background-attachment: fixed;
+    }
+    @media only screen and (max-width: 768px) {
+    &{
+    background-attachment:unset;
+    }
+    }
 
           .img{
-      
-
+    
       img{
         border-radius: 50%;
         width: 300px;
         height: 300px;
+      
       }
        }
 
@@ -348,6 +362,19 @@ header{
 
   align-items: center;
   justify-content: space-evenly;
+  &{
+    background-position-x: right!important;
+    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-image:url(../assets/slash3.png);
+    background-position-y: bottom!important;
+   background-attachment: fixed;
+    }
+    @media only screen and (max-width: 768px) {
+    &{
+    background-attachment:unset;
+    }
+    }
     
     .img{
 
@@ -418,13 +445,34 @@ footer{
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
- 
+  &{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
   h6{
     
     color: #fff;
     font-family: 'Inter';
     font-weight: 500;
     
+  }
+  h6::before{
+    content: '<h6> ';
+    font-size: 16px;
+         font-family: 'La Belle Aurore', cursive;
+         color: #fff;
+         margin-bottom: 50px;
+         opacity: 0.5;
+  }
+  h6::after{
+    content: ' </h6> ';
+    font-size: 16px;
+         font-family: 'La Belle Aurore', cursive;
+         color: #fff;
+         margin-bottom: 50px;
+         opacity: 0.5;
   }
   .socials{
     display: flex;

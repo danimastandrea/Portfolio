@@ -7,9 +7,9 @@
 }
 
 header {
-  background-color: #0e0e0e;
   color: #fff;
   height: 450px;
+  background-color: #0e0e0e;
 }
 
 header {
@@ -295,6 +295,21 @@ header .container .socials a svg:hover {
   padding-right: 50px;
 }
 
+.info {
+  background-position-x: right !important;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-image: url(../assets/slash3.png);
+  background-position-y: bottom !important;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .info {
+    background-attachment: unset;
+  }
+}
+
 .info .img img {
   border-radius: 50%;
   width: 300px;
@@ -374,6 +389,21 @@ header .container .socials a svg:hover {
           justify-content: space-evenly;
 }
 
+.info2 {
+  background-position-x: right !important;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-image: url(../assets/slash3.png);
+  background-position-y: bottom !important;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .info2 {
+    background-attachment: unset;
+  }
+}
+
 .info2 .img img {
   width: 400px;
   height: 250px;
@@ -449,10 +479,35 @@ footer {
   padding-right: 50px;
 }
 
+footer {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 footer h6 {
   color: #fff;
   font-family: 'Inter';
   font-weight: 500;
+}
+
+footer h6::before {
+  content: '<h6> ';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #fff;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+footer h6::after {
+  content: ' </h6> ';
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #fff;
+  margin-bottom: 50px;
+  opacity: 0.5;
 }
 
 footer .socials {
