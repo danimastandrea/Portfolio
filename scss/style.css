@@ -149,10 +149,15 @@ header .container .socials {
 }
 
 header .container .socials a svg {
-  padding-left: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 header .container .socials a svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   fill: #fff;
 }
 
