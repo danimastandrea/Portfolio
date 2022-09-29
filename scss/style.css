@@ -540,6 +540,15 @@ footer .socials a svg:hover {
   .navbar {
     position: absolute;
   }
+  .navbar .navbar-collapse {
+    background-color: #fff;
+  }
+  .navbar .navbar-collapse .nav-item {
+    margin: auto;
+  }
+  .navbar .navbar-collapse .navbar-text {
+    display: none;
+  }
   .cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

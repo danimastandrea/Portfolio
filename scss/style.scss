@@ -9,7 +9,7 @@
   position: fixed;
   width: 100%;
   z-index: 3;
-  
+ 
       
  
 }
@@ -500,7 +500,19 @@ footer{
 @media (max-width: 950px) {
   .navbar{
     position: absolute;
+    .navbar-collapse{
+      background-color: #fff;
+      
+      .nav-item{
+       margin: auto;
+      }
+   
+      .navbar-text{
+       display: none;
+      }
+     }
   }
+
   .cards{
      flex-direction: column;
      padding-bottom: 25px;
