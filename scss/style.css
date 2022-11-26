@@ -11,7 +11,6 @@ header {
   height: 450px;
   background-color: #0e0e0e;
 }
-
 header {
   background-position-x: right !important;
   background-repeat: no-repeat;
@@ -20,46 +19,36 @@ header {
   background-position-y: bottom !important;
   background-attachment: fixed;
 }
-
 @media only screen and (max-width: 768px) {
   header {
     background-attachment: unset;
   }
 }
-
 header .container {
   max-width: 1800px;
   height: 450px;
   width: 100%;
 }
-
 header .container .header__info {
   max-width: 900px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-top: 150px;
   width: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-
 header .container .header__info h1 {
   font-size: 4.375rem;
   text-shadow: #fff;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 200;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: slidein;
           animation-name: slidein;
 }
-
 @-webkit-keyframes slidein {
   from {
     margin-left: 100%;
@@ -70,7 +59,6 @@ header .container .header__info h1 {
     width: 100%;
   }
 }
-
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -81,25 +69,22 @@ header .container .header__info h1 {
     width: 100%;
   }
 }
-
 header .container .header__info h1::before {
-  content: '<h1> ';
+  content: "<h1> ";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #f1f1f1;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 header .container .header__info h1::after {
-  content: ' </h1>';
+  content: " </h1>";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #f1f1f1;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 header .container .header__info h3 {
   font-size: 20px;
   font-weight: 300;
@@ -108,7 +93,6 @@ header .container .header__info h3 {
   -webkit-animation-name: slidein;
           animation-name: slidein;
 }
-
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -119,68 +103,50 @@ header .container .header__info h3 {
     width: 100%;
   }
 }
-
 header .container .header__info h3::before {
-  content: '<h3> ';
+  content: "<h3> ";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #f1f1f1;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 header .container .header__info h3::after {
-  content: ' </h3>';
+  content: " </h3>";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #f1f1f1;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 header .container .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
 }
-
 header .container .socials a svg {
   margin-left: 15px;
   margin-right: 15px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 header .container .socials a svg:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   fill: #fff;
 }
 
 .cards {
   background-color: #0e0e0e;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   padding-bottom: 96px;
   width: 100%;
   padding-left: 50px;
   padding-right: 50px;
 }
-
 .cards {
   background-position-x: right !important;
   background-repeat: no-repeat;
@@ -189,117 +155,79 @@ header .container .socials a svg:hover {
   background-position-y: bottom !important;
   background-attachment: fixed;
 }
-
 @media only screen and (max-width: 768px) {
   .cards {
     background-attachment: unset;
   }
 }
-
 .cards .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   border-color: transparent;
   background-color: transparent;
 }
-
 .cards .card img {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .cards .card img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
-
 .cards .card p {
   color: #fff;
 }
-
 .cards .card h4 {
   color: #fff;
   padding-top: 15px;
   font-weight: 500;
-  font-family: 'Inter';
+  font-family: "Inter";
   text-transform: uppercase;
 }
 
 .cards2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 96px;
   padding-left: 50px;
   padding-right: 50px;
 }
-
 .cards2 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, white), color-stop(50%, #0e0e0e)) !important;
-  background-image: linear-gradient(to top, white 50%, #0e0e0e 50%) !important;
+  background-image: linear-gradient(to top, rgb(255, 255, 255) 50%, rgb(14, 14, 14) 50%) !important;
   margin-top: -3px;
 }
-
 .cards2 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   border-color: transparent;
   background-color: transparent;
 }
-
 .cards2 .card img {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .cards2 .card img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
-
 .cards2 .card h4 {
   color: #0e0e0e;
   padding-top: 15px;
   font-weight: 500;
-  font-family: 'Inter';
+  font-family: "Inter";
   text-transform: uppercase;
 }
 
 .info {
   background-color: #fff;
   padding-top: 96px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   padding-bottom: 96px;
   padding-left: 50px;
   padding-right: 50px;
 }
-
 .info {
   background-position-x: right !important;
   background-repeat: no-repeat;
@@ -308,65 +236,56 @@ header .container .socials a svg:hover {
   background-position-y: bottom !important;
   background-attachment: fixed;
 }
-
 @media only screen and (max-width: 768px) {
   .info {
     background-attachment: unset;
   }
 }
-
 .info .img img {
   border-radius: 50%;
   width: 300px;
   height: 300px;
 }
-
 .info .content__info {
   max-width: 600px;
 }
-
 .info .content__info .title__info {
   margin-top: 100px;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
-
 .info .content__info .title__info::before {
-  content: '<h3> ';
+  content: "<h3> ";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #000;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 .info .content__info .title__info::after {
-  content: ' </h3>';
+  content: " </h3>";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #000;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 .info .content__info .subtitle__info {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 16px;
   padding-right: 10px;
 }
-
 .info .content__info .subtitle__info::before {
-  content: '<p> ';
+  content: "<p> ";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #000;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 .info .content__info .subtitle__info::after {
-  content: ' </p>';
+  content: " </p>";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #000;
   margin-bottom: 50px;
   opacity: 0.5;
@@ -381,19 +300,12 @@ header .container .socials a svg:hover {
 .info2 {
   background-color: #fff;
   padding-top: 96px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding-bottom: 96px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
 .info2 {
   background-position-x: right !important;
   background-repeat: no-repeat;
@@ -402,62 +314,53 @@ header .container .socials a svg:hover {
   background-position-y: bottom !important;
   background-attachment: fixed;
 }
-
 @media only screen and (max-width: 768px) {
   .info2 {
     background-attachment: unset;
   }
 }
-
 .info2 .img img {
   width: 400px;
   height: 250px;
 }
-
 .info2 .content__info {
   max-width: 600px;
 }
-
 .info2 .content__info .title__info {
   margin-top: 70px;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
-
 .info2 .content__info .title__info::before {
-  content: '<h3> ';
+  content: "<h3> ";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #000;
   opacity: 0.5;
 }
-
 .info2 .content__info .title__info::after {
-  content: ' </h3>';
+  content: " </h3>";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #000;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 .info2 .content__info .subtitle__info {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 16px;
 }
-
 .info2 .content__info .subtitle__info::before {
-  content: '<p> ';
+  content: "<p> ";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #000;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 .info2 .content__info .subtitle__info::after {
-  content: ' </p>';
+  content: " </p>";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #000;
   margin-bottom: 50px;
   opacity: 0.5;
@@ -467,73 +370,53 @@ footer {
   height: 200px;
   background-color: #0e0e0e;
   margin-top: 96px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-left: 50px;
   padding-right: 50px;
 }
-
 footer {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 footer h6 {
   color: #fff;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 500;
 }
-
 footer h6::before {
-  content: '<h6> ';
+  content: "<h6> ";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #fff;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 footer h6::after {
-  content: ' </h6> ';
+  content: " </h6> ";
   font-size: 16px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #fff;
   margin-bottom: 50px;
   opacity: 0.5;
 }
-
 footer .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
 }
-
 footer .socials a svg {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   margin-left: 35px;
 }
-
 footer .socials a svg:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 @media (max-width: 950px) {
@@ -550,10 +433,7 @@ footer .socials a svg:hover {
     display: none;
   }
   .cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding-bottom: 25px;
   }
   .cards .card {
@@ -561,31 +441,21 @@ footer .socials a svg:hover {
   }
   .cards2 {
     padding-top: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-image: none;
   }
   .cards2 {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(85%, white), color-stop(15%, #0e0e0e)) !important;
-    background-image: linear-gradient(to top, white 85%, #0e0e0e 15%) !important;
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 85%, rgb(14, 14, 14) 15%) !important;
     margin-top: -3px;
   }
   .info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     padding-left: 25px;
     padding-right: 20px;
   }
   .info2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     padding-left: 25px;
     padding-right: 20px;
@@ -599,5 +469,4 @@ footer .socials a svg:hover {
     height: 200px;
     border-radius: 50%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
