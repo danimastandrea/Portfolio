@@ -19,19 +19,19 @@ header{
     color: #fff;
     height:450px;
    background-color: #0e0e0e;
+   &{
+    background-position-x: center!important;
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    background-image:url(../assets/fondo2.jpg);
+    background-position-y: bottom!important;
+   background-attachment: fixed;
+    }
+    @media only screen and (max-width: 768px) {
     &{
-      background-position-x: right!important;
-      background-repeat: no-repeat;
-      background-size: contain!important;
-      background-image:url(../assets/slash.png);
-      background-position-y: bottom!important;
-     background-attachment: fixed;
-      }
-      @media only screen and (max-width: 768px) {
-      &{
-      background-attachment:unset;
-      }
-      }
+    background-attachment:unset;
+    }
+    }
   
    
 
@@ -40,11 +40,10 @@ header{
   
     
   .container{
-    max-width: 1800px;
+    max-width: 1900px;
     height: 450px;
     width: 100%;
-   
-      
+  
 
      .header__info{
         max-width: 900px;
@@ -62,21 +61,18 @@ header{
             text-shadow: #fff;
             font-family: 'Inter';
             font-weight: 200;
-           
-           
-                animation-duration: 3s;
-                animation-name: slidein;
+           animation: 1.5s fadeInUp;
+                        
               
-              
-              @keyframes slidein {
-                from {
-                  margin-left: 100%;
-                  width: 300%
+              @keyframes fadeInUp {
+                0% {
+                  transform: translateY(100%);
+                  opacity: 0;
                 }
               
-                to {
-                  margin-left: 0%;
-                  width: 100%;
+                100% {
+                  transform: translateY(0%);
+                  opacity: 1;
                 }
               }
             
@@ -101,20 +97,20 @@ header{
         h3{
             font-size: 20px;
             font-weight: 300;
-            animation-duration: 3s;
-            animation-name: slidein;
-    
-                    @keyframes slidein {
-                            from {
-                             margin-left: 100%;
-                             width: 300%
-                                   }
-          
-                            to {
-                             margin-left: 0%;
-                             width: 100%;
-                                   }
-                                        }
+            animation: 1.5s fadeInUp;
+                        
+              
+              @keyframes fadeInUp {
+                0% {
+                  transform: translateY(100%);
+                  opacity: 0;
+                }
+              
+                100% {
+                  transform: translateY(0%);
+                  opacity: 1;
+                }
+              }
 
           }
 
@@ -172,10 +168,10 @@ header{
     padding-left: 50px;
   padding-right: 50px;
     &{
-        background-position-x: right!important;
+        background-position-x: center!important;
         background-repeat: no-repeat;
-        background-size: contain!important;
-        background-image:url(../assets/slash.png);
+        background-size: cover!important;
+        background-image:url(../assets/fondo2.jpg);
         background-position-y: bottom!important;
        background-attachment: fixed;
         }
@@ -194,9 +190,9 @@ header{
         background-color:transparent;
       img{
         transition: all 0.5s;
-
+        
       }
-      img:hover {
+      img:hover{
         transform: scale(1.2); 
        
        
@@ -228,10 +224,18 @@ header{
     padding-left: 50px;
     padding-right: 50px;
     &{
-        background-image: linear-gradient(to top,rgba(255,255,255,1)50%,rgba(14,14,14,1)50%)!important;
-        margin-top:-3px;
-       
-    }
+      background-position-x: center!important;
+      background-repeat: no-repeat;
+      background-size: cover!important;
+      background-image:url(../assets/fondo2.jpg);
+      background-position-y: bottom!important;
+     background-attachment: fixed;
+      }
+      @media only screen and (max-width: 768px) {
+      &{
+      background-attachment:unset;
+      }
+      }
    
     
     .card{

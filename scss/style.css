@@ -12,10 +12,10 @@ header {
   background-color: #0e0e0e;
 }
 header {
-  background-position-x: right !important;
+  background-position-x: center !important;
   background-repeat: no-repeat;
-  background-size: contain !important;
-  background-image: url(../assets/slash.png);
+  background-size: cover !important;
+  background-image: url(../assets/fondo2.jpg);
   background-position-y: bottom !important;
   background-attachment: fixed;
 }
@@ -25,7 +25,7 @@ header {
   }
 }
 header .container {
-  max-width: 1800px;
+  max-width: 1900px;
   height: 450px;
   width: 100%;
 }
@@ -44,29 +44,16 @@ header .container .header__info h1 {
   text-shadow: #fff;
   font-family: "Inter";
   font-weight: 200;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
+  animation: 1.5s fadeInUp;
 }
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
   }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 header .container .header__info h1::before {
@@ -88,19 +75,16 @@ header .container .header__info h1::after {
 header .container .header__info h3 {
   font-size: 20px;
   font-weight: 300;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
+  animation: 1.5s fadeInUp;
 }
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
   }
-  to {
-    margin-left: 0%;
-    width: 100%;
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 header .container .header__info h3::before {
@@ -148,10 +132,10 @@ header .container .socials a svg:hover {
   padding-right: 50px;
 }
 .cards {
-  background-position-x: right !important;
+  background-position-x: center !important;
   background-repeat: no-repeat;
-  background-size: contain !important;
-  background-image: url(../assets/slash.png);
+  background-size: cover !important;
+  background-image: url(../assets/fondo2.jpg);
   background-position-y: bottom !important;
   background-attachment: fixed;
 }
@@ -193,8 +177,17 @@ header .container .socials a svg:hover {
   padding-right: 50px;
 }
 .cards2 {
-  background-image: linear-gradient(to top, rgb(255, 255, 255) 50%, rgb(14, 14, 14) 50%) !important;
-  margin-top: -3px;
+  background-position-x: center !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-image: url(../assets/fondo2.jpg);
+  background-position-y: bottom !important;
+  background-attachment: fixed;
+}
+@media only screen and (max-width: 768px) {
+  .cards2 {
+    background-attachment: unset;
+  }
 }
 .cards2 .card {
   display: flex;
