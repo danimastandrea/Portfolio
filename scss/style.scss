@@ -190,6 +190,8 @@ header{
         background-color:transparent;
       img{
         transition: all 0.5s;
+        width: 270px;
+        height: 150px;
         
       }
       img:hover{
@@ -245,6 +247,8 @@ header{
         background-color:transparent;
       img{
         transition: all 0.5s;
+        width: 270px;
+        height: 150px;
 
       }
       img:hover {
@@ -533,7 +537,7 @@ footer{
     flex-direction: column;
    background-image: none;
    &{
-    background-image: linear-gradient(to top,rgba(255,255,255,1)85%,rgba(14,14,14,1)15%)!important;
+    background-image: linear-gradient(to top,rgba(255,255,255,1) 85% ,rgba(14,14,14,1) 15% )!important;
     margin-top:-3px;
    
 }
